@@ -1,0 +1,11 @@
+.separador {
+    height: 5px;
+    border: 2px dashed #162c8f;
+    margin-top: 2em;
+  }
+  
+  .separador p {
+    color: transparent;
+    user-select: none;
+  }
+  

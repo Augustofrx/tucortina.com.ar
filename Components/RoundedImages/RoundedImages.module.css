@@ -1,0 +1,76 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.roundedImages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cortinasRoller, .cortinasVerticales, .cortinasTextiles {
+    margin-top: 2em;
+    height: 200px;
+    width: 200px;
+    border-radius: 9999px;
+    border: 2px dashed #162c8f;
+    padding: 0.3em;
+}
+
+
+
+.cortinasRoller img, .cortinasVerticales img, .cortinasTextiles img  {
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    transition: 1s;
+}
+
+
+.rollerContainer, .verticalesContainer, .textilesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rollerContainer a, .verticalesContainer a, .textilesContainer a {
+    margin-top: 1em;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+.textilesContainer a {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #162c8f;
+    margin-top: 1em;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.2em;
+}
+.navigation a {
+    user-select: none;
+    cursor: pointer;
+}
+
+@media(max-width: 750px){
+    .roundedImages{
+        flex-direction: column;
+    }
+    
+    .navigation a {
+        font-size: 14px;
+    }
+}

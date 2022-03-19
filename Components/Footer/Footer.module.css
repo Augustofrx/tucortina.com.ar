@@ -1,0 +1,252 @@
+.generalDiv {
+    margin-top: 2em;
+}
+
+.blueDiv {
+    width: 100%;
+    height: 12em;
+    background-color: #162c8f;
+    display: flex;
+}
+
+.yellowDiv {
+    width: 100%;
+    height: 1.5em;
+    background-color: #ffbb01;
+    margin-top:0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellowDiv p {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    user-select: none;
+}
+
+.leftCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+     color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  user-select: none;
+}
+
+.logoytexto {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.logoytexto p {
+    color: white;
+    font-size: 28px;
+    margin-left: 0.5em;
+}
+
+.logoytexto img {
+    width: 5em;
+    height: 5em;
+}
+
+.secondaryText p{
+    margin-top: 1em;
+    font-size: 21px;
+}
+
+.rigthCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10em;
+}
+
+.whatsapp, .facebook, .instagram, .location {
+    display: flex;
+    align-items: center;
+    
+}
+
+.whatsapp img, .facebook img, .instagram img, .location img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.whatsapp img:hover, .facebook img:hover, .instagram img:hover, .location img:hover {
+    transform: scale(1.2);
+}
+
+
+.whatsapp p, .facebook p, .instagram p, .location p {
+    margin: 0.5em;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+.yellowDiv img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 1em;
+    transition: 0.1s;
+}
+
+.yellowDiv img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(max-width: 1050px) {
+
+    .logoytexto img {
+        width: 4em;
+        height: 4em;
+    }
+    .logoytexto p {
+        font-size: 20px;
+        margin-left: 0.5em;
+    }
+    .secondaryText p{
+        font-size: 16px;
+    }
+    
+    .rigthCategory {
+        margin-left: 2em;
+    }
+    .whatsapp img, .facebook img, .instagram img, .location img {
+        width: 1.5em;
+        height: 1.5em;
+     
+    }
+    .logoytexto {
+        margin: 0em;
+    }
+    .secondaryText {
+        margin: 0;
+    }
+
+   
+}
+
+
+
+@media(max-width: 700px) {
+    .blueDiv {
+        flex-direction: column;
+    }
+
+    .logoytexto {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .leftCategory {
+        width: 100%;
+        height: 50%;
+    }
+    .rigthCategory {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 0em;
+        margin-left: 10px;
+    }
+    
+    .whatsapp, .instagram {
+        position: relative;
+        left: 120px;
+        width: 50%;
+    }
+
+    .facebook, .location {
+        position: relative;
+        right: 20px;
+    }
+
+
+    .whatsapp img, .facebook img, .instagram img, .location img {
+        width: 1em;
+        height: 1em;
+        margin-left: 0.2em;
+    }
+    .whatsapp p, .facebook p, .instagram p, .location p {
+        font-size: 12px;
+    }
+
+    .secondaryText p {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .yellowDiv p{
+        font-size: 12px;
+    }
+
+    .logoytexto img {
+        width: 3em;
+        height: 3em;
+    }
+ 
+}
+
+@media(max-width: 500px) {
+
+    .rigthCategory {
+        margin-left: 1em;
+    }
+
+    .whatsapp, .instagram {
+        position: relative;
+        left: 40px;
+        width: 60%;
+    }
+
+    .location {
+        width:80% ;
+    }
+
+    .yellowDiv p{
+        font-size: 8px;
+    }
+
+    .logoytexto p{
+        font-size: 16px;
+    }
+    
+    .secondaryText p{
+        font-size: 12.4px;
+    }
+
+    .logoytexto img {
+        width: 3em;
+        height: 3em;
+    }
+
+    .whatsapp p, .facebook p, .instagram p, .location p {
+        font-size: 10px;
+    }
+    
+    .whatsapp img, .facebook img, .instagram img, .location img {
+        width: 0.8em;
+        height: 0.8em;
+    }
+
+    .yellowDiv img{
+        width: 0.8em;
+        height: 0.8em;
+        margin-left: 0.5em;
+    }
+}
