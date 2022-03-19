@@ -8,9 +8,13 @@ Puedes visitar la página en www.tucortina.com.ar
 o en caso de que prefieras clonar el repositorio, lo pasos a seguir son los siguientes:
 
 Una vez clonado el repo, deberas abrir tu editor de código
-y en consola ejecutar el siguiente comando: npm run dev
+y en consola ejecutar el siguiente comando:
 
-luego en tu explorador deberas ingresar a la siguiente dirección: localhost:3000
+npm run dev
+
+luego en tu explorador deberas ingresar a la siguiente dirección:
+
+localhost:3000
 
 y ya podras visualizar la página funcionando.
 
