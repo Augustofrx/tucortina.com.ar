@@ -90,6 +90,18 @@
 .navigation a {
   user-select: none;
   cursor: pointer;
+  animation-name: changeColor;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+      color: white;
+  }
+  100% {
+      color: #ffbb01;
+  }
 }
 
 @media (max-width: 750px) {

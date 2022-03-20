@@ -54,15 +54,28 @@
     align-items: center;
     background-color: #162c8f;
     margin-top: 1em;
-    color: white;
     font-size: 24px;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     padding: 0.2em;
 }
+
+
 .navigation a {
     user-select: none;
     cursor: pointer;
+    animation-name: changeColor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+      color: white;
+  }
+  100% {
+      color: #ffbb01;
+  }
 }
 
 @media(max-width: 750px){
