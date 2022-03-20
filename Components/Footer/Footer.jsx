@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
         </div>
         <div className={styles.yellowDiv}>
-            <p>Dasarrollado por Augusto Iphar. Desarrollador Web Full-Stack</p>
+            <p>Desarrollado por Augusto Iphar. Desarrollador Web Full-Stack</p>
             <Link href="https://www.linkedin.com/in/augustofrx/">
             <img src="linkedin.png" alt="linkedInLogo"  loading="lazy"/>
             </Link>
