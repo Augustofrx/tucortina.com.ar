@@ -10,7 +10,7 @@ o en caso de que prefieras clonar el repositorio, lo pasos a seguir son los sigu
 Una vez clonado el repo, deberas abrir tu editor de código
 y en consola ejecutar los siguientes comandos:
 
-npm install
+npm install<br/>
 (una vez finalizada la instalación de dependencias, el siguiente comando) <br/>
 npm run dev
 
