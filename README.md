@@ -8,8 +8,10 @@ Puedes visitar la página en www.tucortina.com.ar
 o en caso de que prefieras clonar el repositorio, lo pasos a seguir son los siguientes:
 
 Una vez clonado el repo, deberas abrir tu editor de código
-y en consola ejecutar el siguiente comando:
+y en consola ejecutar los siguientes comandos:
 
+npm install<br/>
+(una vez finalizada la instalación de dependencias, el siguiente comando) <br/>
 npm run dev
 
 luego en tu explorador deberas ingresar a la siguiente dirección:
