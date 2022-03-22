@@ -4,8 +4,53 @@ import styles from "../styles/productos.module.css";
 import {Footer} from '../Components/Footer/Footer' 
 import Link from "next/Link";
 import Head from "next/head";
-
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { resetAll } from "../redux/actions";
 export default function Productos() {
+  const dispatch = useDispatch();
+  const rollerClick = useSelector((state) => state.rollerClick);
+  const verticalesClick = useSelector((state) => state.verticalesClick);
+  const textilesClick = useSelector((state) => state.textilesClick);
+  useEffect(() => {
+    if(rollerClick === true && window.innerWidth < 400) {
+      window.scrollTo({
+        top: 100,
+        behavior: 'smooth'
+    })}
+    else if (rollerClick === true) {
+      window.scrollTo({
+        top: 130,
+        behavior: 'smooth'
+    })}
+    else if(verticalesClick === true && window.innerWidth < 400 ) {
+      window.scrollTo({
+        top: 854,
+        behavior: 'smooth'
+    })
+    }
+    else if(verticalesClick) {
+      window.scrollTo({
+        top: 424,
+        behavior: 'smooth'
+    })
+    }
+    else if (textilesClick === true && window.innerWidth < 400 ) {
+      window.scrollTo({
+        top: 1470,
+        behavior: 'smooth'
+    })
+    }
+    else if (textilesClick === true) {
+      window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+    })
+    }
+    dispatch(resetAll());
+  }, [dispatch])
+  
+
   return (
     <div className={styles.container}>
          <Head>

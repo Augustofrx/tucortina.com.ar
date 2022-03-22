@@ -29,6 +29,10 @@
     transition: 1s;
 }
 
+.cortinasRoller img:hover, .cortinasVerticales img:hover, .cortinasTextiles img:hover {
+transform: scale(0.9);
+cursor: pointer;
+}
 
 .rollerContainer, .verticalesContainer, .textilesContainer{
     display: flex;
@@ -46,27 +50,6 @@
 
 .textilesContainer a {
     text-align: center;
-}
-
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #162c8f;
-    margin-top: 1em;
-    font-size: 24px;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    padding: 0.2em;
-}
-
-
-.navigation a {
-    user-select: none;
-    cursor: pointer;
-    animation-name: changeColor;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes changeColor {
