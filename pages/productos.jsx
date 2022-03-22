@@ -48,7 +48,7 @@ export default function Productos() {
     })
     }
     dispatch(resetAll());
-  }, [dispatch])
+  })
   
 
   return (
