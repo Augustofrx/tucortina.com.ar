@@ -12,6 +12,7 @@ export default function Productos() {
   const rollerClick = useSelector((state) => state.rollerClick);
   const verticalesClick = useSelector((state) => state.verticalesClick);
   const textilesClick = useSelector((state) => state.textilesClick);
+ 
   useEffect(() => {
     if(rollerClick === true && window.innerWidth < 400) {
       window.scrollTo({

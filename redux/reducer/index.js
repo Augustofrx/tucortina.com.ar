@@ -1,30 +1,29 @@
 let initialState = {
-  rollerClick: false,
-  verticalesClick: false,
+  rollersClick: false,
   textilesClick: false,
+  verticalesClick: false,
 };
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
-    case "ROLLER_CLICK":
+    case "ROLLERS_CLICK":
       return {
-          ...state,
-          rollerClick: true,
+        ...state,
+        rollersClick: true,
+      };
+    case "TEXTILES_CLICK":
+      return {
+        ...state,
+        textilesClick: true,
       };
     case "VERTICALES_CLICK":
       return {
         ...state,
         verticalesClick: true,
       };
-    case "TEXTILES_CLICK":
-      return {
-          ...state,
-          textilesClick: true,
-      };
     case "RESET_ALL":
       return {
-          ...initialState,
-      
+        ...initialState,
       };
 
     default:

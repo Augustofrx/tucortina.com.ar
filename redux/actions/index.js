@@ -4,20 +4,20 @@ export function resetAll() {
     }
   }
   
-  export function rollerClick() {
+  export function rollersClick() {
       return {
-          type: "ROLLER_CLICK"
-      }
-  }
-
-  export function verticalesClick() {
-      return {
-          type: "VERTICALES_CLICK"
+          type: "ROLLERS_CLICK"
       }
   }
 
   export function textilesClick() {
       return {
           type: "TEXTILES_CLICK"
+      }
+  }
+
+  export function verticalesClick() {
+      return {
+          type: "VERTICALES_CLICK"
       }
   }
