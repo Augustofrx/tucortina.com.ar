@@ -18,12 +18,12 @@ return (
         INICIO
     </a>
     </Link>
-    <Link href='/productos'>
+    <Link href='/productos.html'>
     <a>
         PRODUCTOS
     </a>
     </Link>
-    <Link href='/galeria'>
+    <Link href='/galeria.html'>
     <a>
         GALERIA
     </a>
